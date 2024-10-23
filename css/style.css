@@ -1,9 +1,19 @@
+body {
+    margin: 0;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    width: 100%;
     
+}
+
+.message-header{
+
+    height: 600px;
 }
 
 .header {
@@ -15,29 +25,45 @@
     background-size: inherit;
     position: absolute;
     left: 0%;
-    top: 8%;
-    width: 100%;
-    height: 58%;
+    top: 9%;
+    width: 94%;
+    height: 56%;
 }
 
 .nama {
-    color: red;
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 18px;
+    left: 71px;
+    font-family: fantasy;
 }
 
 .isi {
     color: #676d75;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 73px;
 }
 
 
-.kotak {
+
+.bg-border {
     background-image: url(..//asset/bg-foto.jpg);
-    width: 401px;
-    height: 393px;
-    background-position: center;
-    position: absolute;
-    left: 68%;
-    top: 7%;
+    height: 400px;
+    width: 300px;
 }
+
+#contact-me {
+    position: relative;
+    top: 39px;
+    font-size: 30px;
+    left: 69px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
 
 
     .awal {
@@ -53,7 +79,7 @@
 .logo-icon{
     height: 50px;
     width: 50px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAA4VBMVEXzBwr///9UAgMAAAD8BwrzAAr//wBYAgP//QD/+wCFhYX/CAv3hAji4uK3t7f/+QDY2Njr6+t/f3/5+fm+vr7ExMSYmJipqanQ0NAaAAH0HQr0NAr2cQn80QX69ADf1wClnQDFvQB+eABRTQATEgD2ZgkkJCRwcHAsLCxHR0dWVlY8PDxDQAD3jgj5qAf8wAb1Swn1Wwn3egnlBwm7BQj5rwf+4wT4lwiwAAd5AwVsZwAaFwA4NQAfHAALCQDu5QCwqQAvLQBhXQAmIwDMAAgXFxeLhADRyQCZkwAXFx79yQV4ClZhAAADGElEQVRIie1XbZOaMBCG20sETkVB0VMJ4hsKKmqrXu2LetfTK///BzVsAt60/eR0pv3gjiPrZp/k2SfJqspj4e4KKzwqhYf7K+yhoNzdK1fY/d0NeAP+QyBJLXd+c5V30fdAQtrDzrCVjrU7xe2sk7nF1SLN56/latVp8+eHj8rldpCFS3WTamtS3FCNMabTuL3dUJMxk7I5IUtX4x90ulmRp08fcyAZat7uM3zp6hvN330FgG+9vWYe+tyDfpdt1tTrHQEGzz6Nn55yIGnrPkAUAnQZzw0Nx+D+YcBdy+Ley57tAMZBwP2dNv+e10jcPUBJVUuw60Ngq6nV+VoN9NQG9Hm4ir4Fb7SVAcmQPkOFR22ebKjSRlDNXONdeALmNgduzhCkwSbnmyXYKQVpNQhzvwxeLIF8wb6Y3QJcOLVS5CDL0MbkdNgOmji572ZA1xMLqgATzI6iEYCYHh8hDgfgCGAigGRBe4IWT6vLSqUwAK8oTsqjBNAUVNcSuGayhDGmqdVKpQEgKHKLXmEsFRIPJsQhhHVxoVQaJ5MgQHKTqGLblVG2OsbGR9oRwBU9ghT6IuSojuSqQtOq2FdRx4mKQ05iT2xSBWCU4Ro4lYMU1earkEbKdXYl0HwTexDKXQ4sYyKKjqCcVtqwBFND0NJnArikU5ALQjmVBjV1pLopMCwLAUrI/kRbArhlomgnmOBQOXCcEGpCf4FPCTmCRAD7hIgOwEuUZ1m18sMZ1nCuMr6jNiXLRjrPdCmBiY/ToyS5qEY2F1K/HNoQPJfInpOcsTQsPE+P8kNtj/LblYp9oosMOGfZjXDyuY08mWviD7L75cBUm5Osy7XpG4wb9ZoTAb/8Vr1Zd37Abgphudls8DPhU94cjBoPj6DPXJK3R7KlXdyBQVfzsMfA8aCxHnpwYmymn6fovxxoQi5Ahcx00/PPe41tXbr3fX9PWXFO2dn3PVOLW2SxEWGNzWSLze6jUlwn8bzD2+dynrgJeu1t7LpxsYUtFcPrlYRdOjnJG/afPOWXD3/vu+MGvAH/a+DVP+av/fvwE5CMUPOfB0+VAAAAAElFTkSuQmCC);
+    background-image: url(..//asset/bg-logo.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -75,39 +101,102 @@ nav>a {
     
 }
 
+.kotak {
+    background-image: url(..//asset/bg-foto.jpg);
+    width: 401px;
+    height: 393px;
+    background-position: center;
+    position: absolute;
+    left: 68%;
+    top: 8%;
+}
 
 
 .section-profile {
     width: 100% ;
-    height: 66%;
+    height: 57%;
     background-position: center;
     position: absolute;
     left: 0%;
-    top: 66%;
+    top: 62%;
     background-color: #302b2b;
+}
+
+.foto-gw{
+    background-image: url(..//asset/foto-gw-removebg-preview.png);
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    background-position: center;
+    background-size: 1000px;
 }
 
 .foto-profile {
     background-image: url(..//asset/bg-foto.jpg);
     width: 401px;
-    top: 75%;
-    height: 393px;
-    left: 1%;
+    
+    height: 385px;
+    left: 4%;
     background-position: center;
     position: absolute;
+    top: 66%;
 }
 
 .portofolio-section{
-    height: 401px;
-    height: 394px;
-
+    width: 100% ;
+    height: 63%;
+    background-position: center;
+    position: absolute;
+    left: 0%;
+    top: 119%;
     background-color: #232424;
     
 }
 
+.foto-portofolio {
+    height: 350px;
+    width: 400px;
+    background-image: url(..//asset/bandung.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    left: 6%;
+}
+
+.foto-portofolio1 {
+    height: 350px;
+    width: 400px;
+    background-image: url(..//asset/jakarta.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    left: 37%;
+}
+
+.foto-portofolio2 {
+
+    height: 350px;
+    width: 400px;
+    background-image: url(..//asset/yogyakarta.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    left: 68%;
+}
+
+
+
 
 .message-section {
-    height: 300px;
+    height: 500px;
 }
 
 .message-container {
@@ -115,17 +204,125 @@ nav>a {
 }
 
 #lebar {
-    width: 100%;
+    width: 99%;
     display: inline-block;
+  
     
 }
 
-#text { }
+#background-border {
+    position: absolute;
+    top: 203%;
+    padding: 10px 18px;
+    margin: 7px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    background-color: #5340ff;
+    border: 1px solid black;
+}
+
+/* Styling untuk body dan konten secara keseluruhan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header form */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk form input */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Styling untuk label */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Styling untuk input text, input date, dan textarea */
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Styling untuk input radio */
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Styling untuk tombol submit */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk output box */
+#output {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Styling untuk teks yang akan muncul di output */
+#output p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
 
 .kaki {
     text-align: center;
     font-family: fangsong;
     font-size: small;
     font-weight: bold;
+    color: white;
 }
 
+footer {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 300%;
+}

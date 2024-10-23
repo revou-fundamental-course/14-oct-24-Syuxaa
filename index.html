@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
+<body style="background-color: #171716;">
     <!--logo icond & navbar-->
     <header class="main-header" >
         <!--logo-->
@@ -24,40 +24,54 @@
 
     <!--Content-->
     <main class="header">
-
+        
         <!--Section home-->
         <section id="banner">
+            
             <article>
-                <p style="color: white;">Hello ,My Name Is</p>
+                
+                <p style="color: #f54242; font-size: 30px; position: relative; top: 44px;
+                left: 74px;">
+                             Hello ,My Name Is
+                            </p>
                 <div class="nama">RIZKISAHAL</div>
                 <div class="isi">a passionate and learning web developer drived by revou</div>
-                <a href="#section-message-us">Contact me</a>
+
+                
+                
+                    <a href="#section-message-us" id="contact-me" >Contact me</a>
+                    
+                    
+                
 
                 <!--foto banner-->
                 
                 <div class="kotak"></div>
+                <div class="foto-gw"></div>
+                
                 
 
             </article>
         </section>
 
     </main>
-<hr>
+
          <!--Section Profile-->
+         <main class="header">
          <section id="section-profile">
+            <div class="section-profile" ></div>
+           
             <header>
                 <h1>Profile</h1>
             </header>          
             <article>
-                <div class="header"></div>
-                <div class="section-profile"></div>
-
+               
                 <!--bg-->
                 <div class="foto-profile" ></div>
 
             </article>  
          </section>
-<hr>
+         </main>
           <!--Section Portofilio-->
         <section id="section-portofolio">
             <header>
@@ -65,58 +79,58 @@
             </header>
             <article>
                 <div class="header"></div>
-                <div class="portofolio-sectios">
-
+                <div class="portofolio-section">
+                    <!--foto kota-->
+                    <div class="foto-portofolio"></div>
+                    <div class="foto-portofolio1"></div>
+                    <div class="foto-portofolio2"></div>
                 </div>
+                
+               
+
+                
             </article>
         </section>
-<hr>
+
          <!--Section Message us-->
+         <main class="message-header">
          <section id="section-message-us">
             <header>
-                <h1>Message us</h1>
+                <h1 style="position: absolute; top: 183%; color: white; left: 2%;">Message us</h1>
             </header>
              
-            <div class="header" id="form"> 
+            <div id="form"> 
                 <!--ini input form-->
-                <form action="text-area" method="post" >
-                    <table>
-                        <tr>
-                            <td>Nama : </td>
-                            <td><input type="text" id="lebar"></td>
-                        </tr>
-
-                        <tr>
-                            <td>Tanggal :</td>
-                            <td><input type="date" id="lebar"></td>
-                        </tr>
-
-                        <tr>
-                            <td>jenis kelamin</td>
-                            <td>
-                                <input type="radio" name="jk">laki laki
-                                <input type="radio" name="jk">Perempuan
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Pesan</td>
-                            <td>
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="submit" value="submit" id="lebar">
-                            </td>
-                        </tr>
-                       
-                        <textarea id="text"></textarea>
-
-                    </table>
+                <form id="dataForm">
+                    <!-- Input Text untuk Nama -->
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required><br><br>
+            
+                    <!-- Input Radio untuk Jenis Kelamin -->
+                    <label>Jenis Kelamin:</label><br>
+                    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki">Laki-laki</label><br>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label><br><br>
+            
+                    <!-- Input Tanggal -->
+                    <label for="tanggal">Tanggal:</label>
+                    <input type="date" id="tanggal" name="tanggal" required><br><br>
+            
+                    <!-- Input Pesan -->
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea><br><br>
+            
+                    <!-- Input Submit -->
+                    <button type="submit">Submit</button>
                 </form>
+            
+                <h2>Data yang Diinput</h2>
+                <div id="output" style="border: 2px solid black; padding: 10px; width: 300px;">
+                    <!-- Data yang diinput akan muncul di sini -->
+                </div>
+            
+                <script src="js/script.js"></script>
 
                 <div></div>
             </div>
@@ -124,7 +138,11 @@
     </main>
 
  
-<hr>
+
+
+
+
+
 
     <!--copyright-->
     <footer>
